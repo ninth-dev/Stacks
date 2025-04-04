@@ -33,13 +33,6 @@ class StacksCreateCommand(StacksCommand):
     new_stack_json_content: str = json.dumps(stacks_to_save)
     save_result: Either[SaveError, None] = save_stack_file(stack_file, new_stack_json_content)
     if save_result.has_value():
-      close_all_windows = sublime.yes_no_cancel_dialog("Close all windows?")
-      if close_all_windows == sublime.DIALOG_YES:
-        # TODO: Do we need to move this option to config?
-        _close_open_views(window)
-        # Remove stack name of save and close
-        window.settings().erase(_loaded_stack_name_settings_key)
-      else:
         # Set stack name on save and leave open
         window.settings().update({_loaded_stack_name_settings_key : stack_name})
         view = window.active_view()

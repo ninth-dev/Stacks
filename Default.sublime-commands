@@ -2,6 +2,6 @@
   { "caption": "Stacks: Open Stack", "command": "stacks_open" },
   { "caption": "Stacks: Create New Stack", "command": "stacks_create" },
   { "caption": "Stacks: Delete Stack", "command": "stacks_delete" },
-  { "caption": "Stacks: Update Stack", "command": "stacks_update" },
+  { "caption": "Stacks: Save Stack", "command": "stacks_save" },
   { "caption": "Stacks: Rename Stack", "command": "stacks_rename" },
 ]
