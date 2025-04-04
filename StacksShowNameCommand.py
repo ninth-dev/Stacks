@@ -3,7 +3,7 @@ import sublime_plugin
 from typing import Optional
 from Stacks.components.Common import _loaded_stack_name_settings_key
 
-class StacksShowStackNameCommand(sublime_plugin.TextCommand):
+class StacksShowNameCommand(sublime_plugin.TextCommand):
 
   def run(self, edit):
     view: sublime.View = self.view

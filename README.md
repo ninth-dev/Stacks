@@ -20,33 +20,15 @@ With *Stacks* you can just save all the related views in one go with a handy nam
 
 - Open the command palette with `CMD + SHIFT + P`
 - Select `Package Control: Add Repository`
-- Enter https://github.com/ssanj/Stacks for the repository
+- Enter https://github.com/ninth-dev/Stacks for the repository
 - Select `Package Control: Install Package`
 - Choose Stacks
 
 
 ## Functionality
 
-### Save a stack
-
-Save the current view stack with  `F2`
-
-### Load a stack
-
-Load a given stack with  `SHIFT + F2`
-
-### Delete a stack
-
-Delete a given stack with `CTRL + SHIFT + F2`
-
-### Rename a stack
-
-Rename a stack with `SHIFT + CMD + F2`
-
-### Close active stack
-
-Close an active stack with `CTRL + SHIFT + CMD + F2`
-
-### View the current stack name
-
-View the current stack name via the command palette with `Stacks: Show Stack Name`
+- Open Stack
+- Create New Stack
+- Delete Stack
+- Update Stack
+- Rename Stack

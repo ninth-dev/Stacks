@@ -15,13 +15,7 @@ class StacksSaveCommand(StacksCommand):
     loaded_stack_name = window.settings().get(_loaded_stack_name_settings_key)
 
     if loaded_stack_name:
-      update_stack = sublime.yes_no_cancel_dialog(f"Update stack: {loaded_stack_name}")
-      if update_stack == sublime.DIALOG_YES:
-        return self.on_stack_name(window, stack_file, loaded_stack_name)
-      elif update_stack == sublime.DIALOG_CANCEL:
-        return
-      else:
-        pass #ask for new name below
+      return self.on_stack_name(window, stack_file, loaded_stack_name)
     else:
       pass #ask for new name below
 

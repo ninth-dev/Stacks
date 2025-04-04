@@ -1,7 +1,0 @@
-[
-  { "keys": ["f2"], "command": "stacks_save"},
-  { "keys": ["shift+f2"], "command": "stacks_open"},
-  { "keys": ["shift+ctrl+f2"], "command": "stacks_delete"},
-  { "keys": ["shift+super+f2"], "command": "stacks_rename"},
-  { "keys": ["ctrl+shift+super+f2"], "command": "stacks_close_stack"},
-]

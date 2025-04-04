@@ -22,7 +22,7 @@ class StacksCommand(sublime_plugin.WindowCommand):
       if 'folder' in window.extract_variables():
         self.project_dir: str = window.extract_variables()['folder']
         self.stack_file = StackFileName(f"{self.project_dir}/{_stack_file_name}")
-        # # remove any saved stack names on restart
+        # remove any saved stack names on restart
         # window.settings().erase(_loaded_stack_name_settings_key)
         self.logger.info(f"setting project_dir: {self.project_dir} and stack file {self.stack_file.value}")
         self.on_run(window, self.logger, self.stack_file)
